@@ -1,0 +1,18 @@
+<div class="sidenav-header">
+  <img [width]="profilePicSize()" [height]="profilePicSize()" src="https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"/>
+  <div class="header-text" [class.hide-header-text]="sideNavCollapsed()">
+    <h2>Your Channel</h2>
+    <div>Dheeraj</div>
+  </div>
+</div>
+<mat-nav-list>
+  <a class="menu-item" mat-list-item *ngFor="let menu of menuItems()"
+    [routerLink]="menu.route"
+    routerLinkActive="selected-menu-item"
+    #rla="routerLinkActive"
+    [activated]="rla.isActive">
+
+    <mat-icon [fontSet]="rla.isActive ? 'material-icons' : 'material-icons-outlined' " matListItemIcon>{{menu.icon}}</mat-icon>
+    <span style="font-weight: 500;">{{menu.label}}</span>
+  </a>
+</mat-nav-list>
