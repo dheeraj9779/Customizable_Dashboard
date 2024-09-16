@@ -7,10 +7,15 @@
   position: relative;
   height: 100%;
   width: 100%;
-  padding: 32px;
+  padding: 22px;
   box-sizing: border-box;
   border-radius: inherit;
   overflow: hidden;
+}
+
+.widget-name{
+  margin: 5px 0 10px 0;
+  font-size: 20px;
 }
 
 .setting-button{
@@ -18,3 +23,5 @@
   top: 20px;
   right: 20px;
 }
+
+

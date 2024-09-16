@@ -1,5 +1,5 @@
 <div class="container mat-elevation-z3" [style.background-color]="data().backgroundColor ?? 'white'" [style.color]="data().color ?? 'inherit'">
-  <h3>{{data().label}}</h3>
+  <p class="widget-name">{{data().label}}</p>
   <button mat-icon-button class="setting-button" (click)="showOptions.set(true)"
   [style.--mdc-icon-button-icon-color]="data().color ?? 'inherit'">
     <mat-icon>settings</mat-icon>

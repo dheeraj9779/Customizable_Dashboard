@@ -2,6 +2,9 @@ import { Injectable, signal, computed } from '@angular/core';
 import { Widget } from '../models/dashboard';
 import { SubscribersComponent } from '../pages/dashboard/widgets/subscribers/subscribers.component';
 import { ViewsComponent } from '../pages/dashboard/widgets/views/views.component';
+import { WatchTimeComponent } from '../pages/dashboard/widgets/watch-time/watch-time.component';
+import { RevenueComponent } from '../pages/dashboard/widgets/revenue/revenue.component';
+
 
 @Injectable()
 export class DashboardService {
@@ -20,6 +23,20 @@ export class DashboardService {
       content: ViewsComponent,
       backgroundColor: '#003f5c',
       color: 'whitesmoke'
+    },
+    {
+      id: 3,
+      label: "Watch Time",
+      content: WatchTimeComponent,
+      backgroundColor: '#003f5c',
+      color: 'whitesmoke'
+    },
+    {
+      id: 4,
+      label: "Revenue",
+      content: RevenueComponent,
+      backgroundColor: '#003f5c',
+      color: 'whitesmoke'
     }
   ]
   )
@@ -29,13 +46,29 @@ export class DashboardService {
       id: 1,
       label: "Subscribers",
       content: SubscribersComponent,
-      rows: 2,
-      columns: 2
+      backgroundColor: '#003f5c',
+      color: 'whitesmoke'
     },
     {
       id: 2,
       label: "Views",
-      content: ViewsComponent
+      content: ViewsComponent,
+      backgroundColor: '#003f5c',
+      color: 'whitesmoke'
+    },
+    {
+      id: 3,
+      label: "Watch Time",
+      content: WatchTimeComponent,
+      backgroundColor: '#003f5c',
+      color: 'whitesmoke'
+    },
+    {
+      id: 4,
+      label: "Revenue",
+      content: RevenueComponent,
+      backgroundColor: '#003f5c',
+      color: 'whitesmoke'
     }
   ])
 

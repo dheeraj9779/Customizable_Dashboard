@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
-  selector: 'app-views',
+  selector: 'app-watch-time',
   standalone: true,
   imports: [MatIconModule],
-  templateUrl: './views.component.html',
-  styleUrl: './views.component.css'
+  templateUrl: './watch-time.component.html',
+  styleUrl: './watch-time.component.css'
 })
-export class ViewsComponent {
+export class WatchTimeComponent {
 
 }
